@@ -29,32 +29,89 @@
       
     }
     .plcRoutelist{
-        /*border:1px solid brown;定位*/
+        /*border:1px solid brown;表示位置用颜色线显示定位*/
         margin-left: 5px;
     }
     .pic{
-        border-radius: 50%;
+        border-radius: 50%;/*表示将内容变成圆型*/
     }
     .bottom{
         position:absolute;
-        top: 390px;
+        top: 390px;/*控制“我的旅游行程”的位置*/
+        left: 450px;
+    }
+    .bottom2{
+        position:absolute;
+        top: 768px;/*控制“我的旅游行程”的位置*/
         left: 450px;
     }
     .face{
-        float: left;
+        float: left;/*向左浮动*/
+        border: 1px solid white;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+    }
+    .face2{
+        float: left;/*向左浮动*/
         border: 1px solid white;
         width: 39px;
         height: 39px;
         border-radius: 50%;
     }
     .title{
-        position: absolute;
+        position: absolute;/*表示绝对位置*/
         color: white;
         white-space: nowrap;/*设置字体在同一行*/
         font-size: 18px;
         font-weight: bolder;
-        line-height: 50px;
+        line-height: 50px;/*行高*/
         margin-left: 50px;
+    }
+    .day{
+        position: absolute;
+        top: 90px;
+        right: 450px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        background-color:darkcyan;
+        line-height: 38px;
+        color: white;
+    }
+    .day2{
+        position: absolute;
+        top: 490px;
+        right: 450px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        background-color:darkcyan;
+        line-height: 38px;
+        color: white;
+    }
+    em{/*表示强调的内容。全emphasis*/
+        font-style: normal;
+        font-weight: bolder;
+    }
+    span{
+        margin-left: 10px;/*与前面的间隔*/
+    }
+    .qui-aside{
+        position: absolute;/*定位*/
+        top: 23px;
+        left: 260px;
+        width: 150px;
+        height: 845px;
+        background-color: wheat;
+    }
+    ul{
+        list-style: none;/*表示文字类型前面不需要点*/
+        position: absolute;/*定位*/
+        top: 100px;
+        left: 20px;
     }
 </style>
 <body>
@@ -64,7 +121,6 @@
     <section class="plcRoutelist">
         <a href="">
             <img src="./image/fengjing.jpg" alt="" width="635">
-            <img src="./image/华东.jpg" alt="" width="635">
          </a>
          <div class="bottom">
             <p class="face">
@@ -72,7 +128,49 @@
             </p>
             <h2 class="title">我的旅游行程</h2> 
          </div>
-    </section>
-    
+         <p class="day">
+             14天
+         </p>
+         <div>
+             <em>
+                 城市 
+             </em>
+             <span>
+                 昆明 - 香格里拉 - 西藏
+             </span>
+        </div>
+    </section>  
+    <section class="plcRoutelist">
+        <a href="">
+            <img src="./image/华东.jpg" alt="" width="635">
+         </a>
+         <div class="bottom2">
+            <p class="face2">
+            <img src="./image/touxiang.jpg" alt="" width="38" height="38" class="pic">
+            </p>
+            <h2 class="title">我的旅游行程</h2> 
+         </div>
+         <p class="day2">
+             15天
+         </p>
+         <div>
+             <em>
+                 城市 
+             </em>
+             <span>
+                 北京 - 常州 - 苏州
+             </span>
+        </div>
+    </section> 
+    <aside class="qui-aside">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">目的地</a></li>
+            <li><a href="">酒店</a></li>
+            <li><a href="">机票</a></li>
+            <li><a href="">时间</a></li>
+            <li><a href="">点评</a></li>
+        </ul>
+    </aside> 
 </body>
 </html>
