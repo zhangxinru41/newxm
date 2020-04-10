@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>国内旅游</title>
-</head>
-<style>
+
     html{
         background: cadetblue;
     }
@@ -97,80 +90,44 @@
         font-weight: bolder;
     }
     span{
-        margin-left: 10px;/*与前面的间隔*/
+        margin-left: 10px;/*与昆明等文字前面的间隔*/
     }
-    .qui-aside{
+    .qui-aside{/*左边一整块*/
         position: absolute;/*定位*/
         top: 23px;
         left: 260px;
         width: 150px;
-        height: 845px;
-        background-color: wheat;
+        height: 873px;
+        background-color: darkslategrey;
     }
-    ul{
+    ul{/*首页等文字块*/
         list-style: none;/*表示文字类型前面不需要点*/
         position: absolute;/*定位*/
         top: 100px;
-        left: 20px;
+        left: 6px;
     }
-</style>
-<body>
-    <header class="qui-header">
-        <h1>国内旅游计划</h1>
-    </header>
-    <section class="plcRoutelist">
-        <a href="">
-            <img src="./image/fengjing.jpg" alt="" width="635">
-         </a>
-         <div class="bottom">
-            <p class="face">
-            <img src="./image/touxiang.jpg" alt="" width="38" height="38" class="pic">
-            </p>
-            <h2 class="title">我的旅游行程</h2> 
-         </div>
-         <p class="day">
-             14天
-         </p>
-         <div>
-             <em>
-                 城市 
-             </em>
-             <span>
-                 昆明 - 香格里拉 - 西藏
-             </span>
-        </div>
-    </section>  
-    <section class="plcRoutelist">
-        <a href="">
-            <img src="./image/华东.jpg" alt="" width="635">
-         </a>
-         <div class="bottom2">
-            <p class="face2">
-            <img src="./image/touxiang.jpg" alt="" width="38" height="38" class="pic">
-            </p>
-            <h2 class="title">我的旅游行程</h2> 
-         </div>
-         <p class="day2">
-             15天
-         </p>
-         <div>
-             <em>
-                 城市 
-             </em>
-             <span>
-                 北京 - 常州 - 苏州
-             </span>
-        </div>
-    </section> 
-    <aside class="qui-aside">
-        <ul>
-            <li><a href="">首页</a></li>
-            <li><a href="">目的地</a></li>
-            <li><a href="">酒店</a></li>
-            <li><a href="">机票</a></li>
-            <li><a href="">时间</a></li>
-            <li><a href="">点评</a></li>
-        </ul>
-    </aside> 
-</body>
-</html>
+    .nav-aside{
+        padding: 60px 30px; 
+    }
+    .nav-aside a{
+        font-size: 16px;
+        color: azure;
+        line-height: 35px;
+        padding-left: 10px;
+        text-decoration: none;
+        display: block;
+    }
+    .nav-aside a:hover{
+        color: cornsilk;
+        background-color: brown;
+    }
+    .qui-footer{
+        text-align: center;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .qui-footer a{
+        text-decoration: none;/*去掉下划线*/
+        color: dimgray;
+        margin-left: 60px ;/*字间距*/
+    }
